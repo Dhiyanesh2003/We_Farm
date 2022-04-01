@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>We Farm</title>
+		<link rel="shortcut icon" href="logo.jpeg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+		<style>
+			
+			p{
+				font-size: 50px;
+			}
+			h1{
+				font-size: 100px;
+			}
+			#p{
+				font-size: 20px;
+				margin-top: 50px;
+			}
+			@media (max-width: 1175px){
+				html{
+					overflow: hidden;
+				}
+				.main-container{
+					display: block;
+				}
+				.image{
+					display: none;
+				}
+			}
+			
+			.aa{
+				padding-top: 10px;
+				text-align: center;
+				font-size: 20px;
+				object-fit: cover;
+				text-decoration: none;
+				color: black;
+				border-botom: 1px solid #5FC81E;
+			}
+			.aa:hover{
+				cursor: pointer;
+				color: #5FC81E;
+			}
+			.contt{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5fr;
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+				width: 100%;
+			}
+			.h1{
+				color: #00e639;
+				text-align: center;
+				font-size: 30px;
+				font-family: 'Pacifico', cursive;
+				margin-top: 10px;
+			}
+			.search{
+				height: 50px;
+				text-align: center;
+				font-size: 25px;
+			}
+			
+			*{
+				font-family: 'Poppins', sans-serif;
+			}
+			.bl{
+				color: black;
+				font-size: 35px;
+			}
+			.gr{
+				color: #5FC81E;
+				font-size: 45px;
+			}
+			.find{
+				height: 40px;
+				font-size: 15px;
+				width: 300px;
+				margin-top: 25px;
+				margin-left: 150px;
+			}
+			.onto{
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				font-size: 20px;
+				color: #5FC81E;
+				opacity: 0.9;
+				width: 350px;
+				background-color: black;
+			}
+			h2{
+				margin: 0px;
+			}
+			.search-box{
+				display: grid;
+				grid-template-columns: 3fr 1fr;
+				margin-top: 5px;
+			}
+			.search-btn{
+				height: 40px;
+				width: 100px;
+				margin-top: 25px;
+				background-color: black;
+				color: #5FC81E;
+				font-size: 15px;
+				text-decoration: bold;
+				border-radius: 5px;
+			}
+			.search-btn:hover{
+				cursor: pointer;
+			}
+			.current{
+				cursor: pointer;
+				color: #5FC81E;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="contt">
+				<div>
+					<h1 class="h1"><span class="bl">Organi</span><span class="gr">5</span></h1>
+				</div>
+				<a class="aa" href="consumer_home.html">
+					<div class="item">
+						<h4>Home</h4>
+					</div>
+				</a>
+				<a class="aa" href="consumer_orders.html">
+					<div class="item">
+						<h4>Orders</h4>
+					</div>
+				</a>
+				<a class="aa current" href="consumer_offers.html">
+					<div class="item">
+						<h4>Offers</h4>
+					</div>
+				</a>				
+				<a class="aa" href="consumer_forum.html">
+					<div class="item">
+						<h4>Forum</h4>
+					</div>
+				</a>
+				<a class="aa" href="consumer_cart.html">
+					<div class="item">
+						<h4>Cart</h4>
+					</div>
+				</a>
+				<a class="aa" href="consumer_profile.html">
+					<div class="item">
+						<h4>Profile</h4>
+					</div>
+				</a>
+				<div class="search">
+					<div class="search-box">
+						<input type="text" class="find" placeholder="Search" />
+						<button type="button" class="search-btn">Search</button>
+					</div>
+				</div>
+			</div>
+		</header><hr>
+		<main>
+			<div class="main-container">
+				<div class="left">
+					<div>
+						<center><h1>90% OFF</h1>
+						<p>ON PURCHASES<br>ABOVE Rs.5000</p></center>
+					</div>
+					<div>
+						<center><p id="p">Specially for DIWALI !! Limited Stocks Only !!<br>Terms and Conditions Apply</p></center>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
