@@ -136,12 +136,12 @@
 			}
 		</style>
     </head>
-    <body style="background-image:url('https://images.unsplash.com/photo-1592079927431-3f8ced0dacc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');background-size: cover;background-attachment: fixed;">
+    <body style="background-image:url('https://images.unsplash.com/photo-1469122312224-c5846569feb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1289&q=80');background-size: cover;background-attachment: fixed;">
         <div class="container">
             <div class="container form bg-white pt-5 mt-4 mb-3">
                                                             <!--change after click on sign up-->
                 <p class="text-center login-heading hide-me">SIGN UP</p>
-				<form action="farmer_home.html">
+				<form action="register.php" method="POST">
 					<div class="container hide-me">
 						<div class="row">
 							<div class="col mt-4 pl-5 pr-5">
@@ -151,7 +151,7 @@
 										<i class="fa fa-user-o" aria-hidden="true" id="user"></i>
 									</div>
 									<div class="col-10 pl-0">
-										<input type="text" placeholder="Type your username" class='input-1'>
+										<input type="text" name="USERNAME" placeholder="Type your username" class='input-1' required>
 									</div>
 								</div>
 								<hr class="hr-1">
@@ -166,7 +166,7 @@
 										<i class="fa fa-lock" aria-hidden="true" id="lock"></i>
 									</div>
 									<div class="col-10 pl-0">
-										<input type="password" placeholder="Type your password" class="input-2">
+										<input type="password" name="PASSWORD" placeholder="Type your password" class="input-2" required>
 									</div>
 								</div>
 								<hr class="hr-2">
@@ -181,7 +181,7 @@
 										<i class="fa fa-lock" aria-hidden="true" id="lock"></i>
 									</div>
 									<div class="col-10 pl-0">
-										<input type="password" placeholder="Type your password again" class="input-2">
+										<input type="password" name="P1" placeholder="Type your password again" class="input-2" required>
 									</div>
 								</div>
 								<hr class="hr-2">
@@ -196,7 +196,7 @@
 										<i class="fa fa-phone" aria-hidden="true" id="lock"></i>
 									</div>
 									<div class="col-10 pl-0">
-										<input type="number" placeholder="Type your phone number" class="input-2">
+										<input type="number" name="NUMBER" placeholder="Type your phone number" class="input-2" required>
 									</div>
 								</div>
 								<hr class="hr-2">
@@ -211,7 +211,7 @@
 										<i class="fa fa-envelope" aria-hidden="true" id="lock"></i>
 									</div>
 									<div class="col-10 pl-0">
-										<input type="text" placeholder="Type your email id" class="input-2">
+										<input type="text" name="EMAIL" placeholder="Type your email id" class="input-2" required>
 									</div>
 								</div>
 								<hr class="hr-2">
@@ -226,7 +226,7 @@
 										<i class="fa fa-home" aria-hidden="true" id="lock"></i>
 									</div>
 									<div class="col-10 pl-0">
-										<input type="text" placeholder="Type your address" class="input-2">
+										<input type="text" name="ADDRESS" placeholder="Type your address" class="input-2" required>
 									</div>
 								</div>
 								<hr class="hr-2">
@@ -235,7 +235,7 @@
 						</div>
 						<div class="row mt-4">
 							<div class="col pl-5 pr-5">
-								<a href="consumer_login.html"><span class="btn btn-block text-white login-button">Sign Up</span></a>
+                                <input class="btn btn-block text-white login-button" type="submit" value="Submit" />
 							</div>
 						</div>
 					</div>
